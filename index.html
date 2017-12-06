@@ -5,18 +5,62 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+	 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="materialize/css/materialize.min.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
 	<header class="container-fluid">
 		<nav>
     		<div class="nav-wrapper ">
+    			<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons"></i></a>
       			<a href="#" class="brand-logo"><img src="assets/images/logoForma.png" alt=""></a>
      		    <ul id="nav-mobile" class="right hide-on-med-and-down">
-       				 <li><a class="black-text" href="sass.html">Sass</a></li>
-        			<li><a class="black-text" href="badges.html">Components</a></li>
-        			<li><a class="black-text" href="collapsible.html">JavaScript</a></li>
+       				 <li><a class="black-text" href="sass.html">Viaja</a></li>
+        			<li><a class="black-text" href="badges.html">Conduce</a></li>
+
+        			<li><a class="waves-effect waves-light black-text modal-trigger" href="#modal1">Inicia sesión</a>
+
+  				<!-- Modal Structure -->
+  				<div id="modal1" class="modal">
+   				 	<div class="modal-content">
+     					<div class="row">
+    <form class="col s12">
+    	<img class="center-align" src="assets/images/perfil.jpg" alt="">
+      <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+          <label for="first_name">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Last Name</label>
+        </div>
+      </div>  
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="password" type="password" class="validate">
+          <label for="password">Password</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+      </div>
+        </div>
+      </div>
+    </form>
+  </div>
+    				</div>
+    			<div class="modal-footer">
+     			 	<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Login</a>
+    			</div>
+  				</div>
+        		</li>
       			</ul>
     		</div>
   		</nav>
@@ -42,10 +86,10 @@
 	<section class="img-celu">
 		<div class="container-fluid amber accent-2">
 			<div class="row row-bottom">
-				<div class="col s m10 l xl cont-iphone ">
+				<div class="col s12 m10 l xl cont-iphone ">
 					<div class="row ">
-							<div class="col m5"><img  class="img-iphone" src="assets/images/iPhone6Plus.png" alt=""></div>
-							<div class="col m5 cont-text">
+							<div class="col s12 m5 "><img  class="img-iphone" src="assets/images/iPhone6Plus.png" alt=""></div>
+							<div class="col m5 hide-on-small-only cont-text">
 								<strong><h5 class="white-text">Descarga la nueva app</h5></strong>
 								<p class="white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis sunt dolores aliquam repellendus obcaecati odit officia quasi quibusdam nesciunt, aliquid eius minima dolorem voluptas et quod reiciendis vitae, vel iste!
 								<br>
@@ -74,12 +118,16 @@
 	
 	<section class="">
 		<div class="container-fluid">
-			<div class="row row-bottom Samber accent-2">
+			<div class="row row-bottom amber accent-2">
 				<div class="col s12 m6 l xl">
 					<h5 class="white-text">Tarifas</h5>
 					<p class="white-text">Consulta las tarifas LabCar aquí</p>
 					<img  src="assets/images/shape.png" alt=""><input type="text">
 					<img src="assets/images/shape2.png" alt=""><input type="text">
+					<div class="center-align">
+					<a id="btn" class=" text-black waves-effect waves-light btn">¡TRAZAR RUTA!</a>
+					</div>
+
 				</div>
 				<div class="col s12 m6 l xl">
     				<div class="align-center" id="map"></div>
@@ -104,23 +152,24 @@
 		</div>
 		
 	</section>
-	<div class=" contenedor-gral container-fluid">
 
-		<div class="divider"></div>
+<div class=" contenedor-gral container-fluid">
+<div class="divider"></div>
   <div class="section">
   	<img src="assets/images/logoBlanco.png" alt="">
-  </div>
+  
+<hr>
 <footer>
 	<div class="container-fluid">
 		<div class="row row-bottom ">
-			<div class="col m3">
-				<i class="fa fa-facebook" aria-hidden="true"></i>
-				<i class="fa fa-twitter" aria-hidden="true"></i>
-				<i class="fa fa-linkedin" aria-hidden="true"></i>
-				<i class="fa fa-apple" aria-hidden="true"></i>
-				<i class="fa fa-play" aria-hidden="true"></i>
+			<div class="col s12 m3 iconos">
+				<i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+				<i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+				<i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+				<i class="fa fa-apple fa-2x" aria-hidden="true"></i>
+				<i class="fa fa-play fa-2x" aria-hidden="true"></i>
 			</div>
-			<div class="col m3">
+			<div class="col s12 m3 ">
 				<p>Viaja</p>
 				<p>Conduce</p>
 				<p>Ciudades</p>
@@ -140,12 +189,17 @@
 				<p>Laboratoria</p>
 				<p>Coders</p>
 			</div>
-			<div class="col m3">
+			<div class="col s12 m3 sticks">
 				<img src="assets/images/appstore.png" alt="">
 				<img src="assets/images/enBadgeWebGeneric.png" alt="">
 			</div>
 		</div>
 	</div>
+</div>
+<div class="divider"></div>
+  <div class="section">
+    <p>©2017 LabCar technologies Inc.</p>
+  </div>
 </footer>
 
 

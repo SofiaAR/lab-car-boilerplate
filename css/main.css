@@ -1,4 +1,9 @@
 /* Los estilos de tu proyecto */
+/*header*/
+nav{
+	background-color: white;
+}
+/*seccion1*/
 .fondo-taxi{
 	background-image: url(../assets/images/taxi.jpg);
 	background-repeat: no-repeat;
@@ -8,9 +13,6 @@
 	
 }
 
-nav{
-	background-color: white;
-}
 .logo-card{
 	width:15%;
 }
@@ -22,6 +24,7 @@ nav{
 	color:black;
 	border-radius: 6%;
 }
+/*seccion2*/
 .cont-iphone{
 	margin-top: 5%;
 	margin-bottom: 5%;
@@ -36,6 +39,7 @@ nav{
 .row-bottom{
 	margin-bottom: 0;
 }
+/*seccion3*/
 .img-drive{
 	background-image: url(../assets/images/conduce.jpg);
 	background-repeat: no-repeat;
@@ -57,7 +61,7 @@ nav{
 
 }
 
-
+/*seccion4*/
 #map {
   height: 400px;
   width: 100%;
@@ -70,6 +74,11 @@ nav{
 p{
 	color:white;
 }
-.fa{
-	color: : white;
+/*footer*/
+.iconos{
+	margin-top: 30%;
+	color:white;
+}
+.sticks{
+	margin-top: 20%;
 }
