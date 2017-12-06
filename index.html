@@ -1,1 +1,157 @@
 <!-- Suelta tus manos y tu mente para solucionar este reto -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="materialize/css/materialize.min.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<header class="container-fluid">
+		<nav>
+    		<div class="nav-wrapper ">
+      			<a href="#" class="brand-logo"><img src="assets/images/logoForma.png" alt=""></a>
+     		    <ul id="nav-mobile" class="right hide-on-med-and-down">
+       				 <li><a class="black-text" href="sass.html">Sass</a></li>
+        			<li><a class="black-text" href="badges.html">Components</a></li>
+        			<li><a class="black-text" href="collapsible.html">JavaScript</a></li>
+      			</ul>
+    		</div>
+  		</nav>
+	</header>
+	<section class="fondo-taxi">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col s12 m7 l xl"></div>
+				<div class="col s12 m5 offset-m7">
+					<div id="yellow" class="card  amber accent-2">
+            <div class="card-content white-text">
+              <h4 class="">Disfruta del viaje <br> Eres dueño de tu tiempo</h4>
+              <p>Viaja con <img class="logo-card" src="assets/images/logoBlanco.png" alt=""></p>
+              <a id="btn" class=" text-black waves-effect waves-light btn">REGISTRATE</a>
+              	<div class="bien"><p>o bien</p></div>
+              	 <a id="btn" class=" text-black waves-effect waves-light btn">Conviértete en un conductor</a>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	</section>
+	<section class="img-celu">
+		<div class="container-fluid amber accent-2">
+			<div class="row row-bottom">
+				<div class="col s m10 l xl cont-iphone ">
+					<div class="row ">
+							<div class="col m5"><img  class="img-iphone" src="assets/images/iPhone6Plus.png" alt=""></div>
+							<div class="col m5 cont-text">
+								<strong><h5 class="white-text">Descarga la nueva app</h5></strong>
+								<p class="white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis sunt dolores aliquam repellendus obcaecati odit officia quasi quibusdam nesciunt, aliquid eius minima dolorem voluptas et quod reiciendis vitae, vel iste!
+								<br>
+								<br>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia ut, architecto maiores, tempora provident qui expedita suscipit at rerum, cum delectus perspiciatis natus voluptatibus sequi sint et mollitia adipisci ab.</p>
+							</div>
+					</div>
+				</div>
+			</div>
+			<div class="col s m2 l xl"></div>
+	</section>
+	<div class="container-fluid">
+		<div class="row img-drive">
+			<div class="col s12 m4 l xl offset-m8">
+				<div class="conduce grey darken-4 center-align"
+				>
+				<div class="txt">
+				<h5 class=" white-text ">Conduce cuando quieras</h5>
+				<p class="  white-text">LabCar es una opcion felixble para alcanzar tus metas financieras</p>
+				<a class="waves-effect waves-light btn amber accent-2 white-text">Conviértete en conductor</a>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<section class="">
+		<div class="container-fluid">
+			<div class="row row-bottom Samber accent-2">
+				<div class="col s12 m6 l xl">
+					<h5 class="white-text">Tarifas</h5>
+					<p class="white-text">Consulta las tarifas LabCar aquí</p>
+					<img  src="assets/images/shape.png" alt=""><input type="text">
+					<img src="assets/images/shape2.png" alt=""><input type="text">
+				</div>
+				<div class="col s12 m6 l xl">
+    				<div class="align-center" id="map"></div>
+   					 <script>
+      					function initMap() {
+        				var uluru = {lat: -25.363, lng: 131.044};
+        				var map = new google.maps.Map(document.getElementById('map'), {
+        				zoom: 4,
+         				center: uluru
+       							 });
+        				var marker = new google.maps.Marker({
+         				 position: uluru,
+         				 map: map
+        			});
+     }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUmQNwzse5v-ifH7qqUPWJIUz4IAZJvq8&callback=initMap"></script>
+		</div>
+
+		</div>
+		</div>
+		
+	</section>
+	<div class=" contenedor-gral container-fluid">
+
+		<div class="divider"></div>
+  <div class="section">
+  	<img src="assets/images/logoBlanco.png" alt="">
+  </div>
+<footer>
+	<div class="container-fluid">
+		<div class="row row-bottom ">
+			<div class="col m3">
+				<i class="fa fa-facebook" aria-hidden="true"></i>
+				<i class="fa fa-twitter" aria-hidden="true"></i>
+				<i class="fa fa-linkedin" aria-hidden="true"></i>
+				<i class="fa fa-apple" aria-hidden="true"></i>
+				<i class="fa fa-play" aria-hidden="true"></i>
+			</div>
+			<div class="col m3">
+				<p>Viaja</p>
+				<p>Conduce</p>
+				<p>Ciudades</p>
+				<p>Ciudades</p>
+				<p>Entregas</p>
+				<p>Como funciona?</p>
+				<p>Países</p>
+				<p>Seguridad</p>
+			</div>
+			<div class="col m3">
+				<p>Oportunidades</p>
+				<p>Eventos</p>
+				<p>API de LabCar</p>
+				<p>Eventos</p>
+				<p>Desarrolladores</p>
+				<p>Servicios</p>
+				<p>Laboratoria</p>
+				<p>Coders</p>
+			</div>
+			<div class="col m3">
+				<img src="assets/images/appstore.png" alt="">
+				<img src="assets/images/enBadgeWebGeneric.png" alt="">
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+	
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+ 	<script src="materialize/js/materialize.min.js"></script>
+ 	<script src="js/app.js"></script>
+</body>
+</html>
